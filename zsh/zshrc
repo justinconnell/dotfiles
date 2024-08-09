@@ -1,0 +1,37 @@
+#-----------------------------------------------------
+# Aliases
+#-----------------------------------------------------
+
+alias cl="clear"
+alias vim="nvim"
+
+#-----------------------------------------------------
+# Paths
+#-----------------------------------------------------
+export PATH="$HOME/.local/bin:$PATH"
+
+# Composer
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+
+# Go
+export PATH="$HOME/.go/bin:$PATH"
+
+# Node
+export NODE_PATH=$(realpath $(dirname $(nvm which current))/../lib/node_modules)
+
+#-----------------------------------------------------
+# Shell
+#-----------------------------------------------------
+# Promt
+eval "$(starship init zsh)"
+
+
+#-----------------------------------------------------
+# Databases
+#-----------------------------------------------------
+# mysql
+export PATH=/Users/Shared/DBngin/mysql/8.0.33/bin:$PATH

@@ -1,0 +1,5 @@
+require("jc.options")
+require("jc.keymaps")
+require("jc.autocmds")
+require("jc.diagnostics")
+require("jc.lazy")
